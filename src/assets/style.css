@@ -1,0 +1,81 @@
+#LoginPage {
+    width: 100%;
+    height: 100%;
+    background: url('login-page-background.jpg') no-repeat;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#TitleLogPas {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 5px;
+}
+
+#LoginPassContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    align-items: center;
+
+    max-width: 300px;
+}
+
+#input-field {
+    background: #FFFFFF;
+    /* Blue_Dark */
+
+    border: 3px solid #004179;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+    width: 250px;
+}
+
+#Enter {
+    background: #0067C0;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    width: 264px;
+    height: 40px;
+
+    color: #FFFFFF;
+
+    margin: 10px;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#nav {
+    padding: 30px;
+}
+
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}

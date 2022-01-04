@@ -1,0 +1,32 @@
+$blue-dark:#2D7FAF;
+$blue: #A8CADE;
+$blue-light: #C3D6E1;
+
+$orange: #DC7126;
+$orange-light: #F2CE93;
+
+$green: #95E2AA;
+
+$black: #333333;
+$grey: #777777;
+$grey-light: #E5E5E5;
+
+$white: #F1F1F1;
+
+* {
+  color: $black;
+}
+
+.btn {
+  color: $white;
+  &-primary {
+    background-color: $blue-dark;
+  }
+}
+
+.btn--classic {
+  padding: 10px 15px;
+  min-width: 218px;
+  min-height: 52px;
+  font-size: 24px;
+}

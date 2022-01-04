@@ -1,0 +1,25 @@
+.header {
+  padding: 10px 0 24px;
+  background-color: $blue-dark;
+  font-size: 24px;
+  &__title {
+    &-element {
+      color: $white;
+    }
+  }
+  &-user {
+    text-align: right;
+
+    &__name {
+      color: $white;
+    }
+
+    &__logout {
+      font-size: 18px;
+      color: $white;
+      text-decoration: underline;
+      border-bottom: 1px solid #fff;
+      text-decoration: none;
+    }
+  }
+}

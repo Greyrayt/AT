@@ -1,0 +1,114 @@
+body .exams {
+  &-page {
+    position: relative;
+    &__container {
+      position: relative;
+      padding: 60px 0;
+    }
+
+    .spinner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+  }
+
+  &-questions {
+    margin-bottom: 45px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+    &__button {
+      font-size: 18px;
+      font-weight: 700;
+      color: $black;
+      border: 2px solid $black;
+      background-color: transparent;
+      padding: 5px 10px;
+      &:hover {
+        background-color: $grey;
+      }
+      &.disabled {
+        opacity: 1;
+        background-color: $green;
+      }
+      &.active {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  &-content {
+    background-color: $blue-light;
+    padding: 30px 15px;
+    border-radius: 0.3em;
+    margin-bottom: 45px;
+    &--disabled {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &__question {
+      background-color: $blue;
+      padding: 15px 10px;
+      border-radius: 0.3em;
+      margin-bottom: 15px;
+
+      &-title {
+
+      }
+      &-materials {
+        .dropdown-toggle {
+          background-color: transparent;
+          border: none;
+          color: $black;
+        }
+        
+      }
+    }
+    &__textarea {
+      min-height: 300px;
+      &-wrapper {
+  
+      }
+    }
+    &__download {
+      color: $grey;
+      margin-top: 14px;
+
+      &-icon {
+        width: 14px;
+      }
+    }
+  }
+
+  &-actions {
+    &__button {
+      &-wrapper {
+
+      }
+      &--finish {
+        background-color: $orange;
+        border: none;
+        &:hover {
+          background-color: darken($orange, 15%);
+        }
+      }
+    }
+  }
+}
